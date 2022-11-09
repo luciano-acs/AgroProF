@@ -229,6 +229,17 @@ h1{
     margin-bottom: 0px;
 }
 
+.datosUsuario{
+    height: 475px;
+}
+
+a:active{
+    color: #000;
+}
+a:visited{
+    color: #46C68C
+}
+
 .imagenUsuario{
     width: 80px;
     height: 80px;
