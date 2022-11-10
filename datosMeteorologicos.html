@@ -103,7 +103,7 @@
     </footer>
     <script>
         function cargarTablaTemp() {
-            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-26.8528&lon=-65.7083&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
+            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-37.3768&lon=-63.7736&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
                 .then(response => response.json())
                 .then(data => mostrarTemp(data));
         }
@@ -191,7 +191,7 @@
         }
 
         function cargarTablaLluvia() {
-            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-26.8528&lon=-65.7083&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
+            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-37.3768&lon=-63.7736&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
                 .then(response => response.json())
                 .then(data => mostrarlluvia(data));
         }
@@ -271,7 +271,7 @@
         }
 
         function cargarTablaVientos() {
-            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-26.8528&lon=-65.7083&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
+            fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-37.3768&lon=-63.7736&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
                 .then(response => response.json())
                 .then(data => mostrarVientos(data));
         }
