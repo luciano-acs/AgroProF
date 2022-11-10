@@ -361,8 +361,28 @@ button{
     padding-bottom: 30px;
 }
 
+.lluvias > img, .humedad > img, .vientos > img{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 .datosMeteoro > .lluvias, .datosMeteoro > .humedad, .datosMeteoro > .vientos{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.vientos > a > button:hover, .humedad > a > button:hover, .lluvias > a > button:hover{   
+    background-color: #46C68C;
+    color: #fff;
+}
+
+th{
+    color: #46C68C;
+    text-align: center;
+}
+
+td{
+    color: #fff;
+    text-align: center;
 }
