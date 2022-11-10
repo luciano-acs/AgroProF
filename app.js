@@ -28,21 +28,18 @@ function rellenarDatos(){
 // }
 
 const botonClima = document.getElementById('meteorologico');
-if (botonClima) {
-    botonClima.addEventListener('click', function () {
+botonClima.onclick = function (){
         fetch('https://api.weatherbit.io/v2.0/forecast/daily?lat=-26.8528&lon=-65.7083&days=10&lang=es&key=66a5873f866745edb4f9132616310ae5')
         .then(response => response.json())
         .then(data => mostrarClima(data));
-    });
 }
 
 function mostrarClima(data) {
     const datosClima = JSON.parse(JSON.stringify(data));
-    window.location.href = './datosMeteorologicos.html';
-    console.log(datosClima);
+    //window.location.href = './datosMeteorologicos.html';
 
     for(let i = 0; i < datosClima.data.length; i++) {
-        //const cuerpoTabla = document.getElementById('cuerpoTabla');    
+        const cuerpoTabla = document.getElementById('cuerpoTabla1');    
         const fila = document.createElement('tr');
         const td1 = document.createElement('td');
         td1.text = datosClima.data[i].datetime;
@@ -50,8 +47,10 @@ function mostrarClima(data) {
         td2.text = datosClima.data[i].max_temp;
         const td3 = document.createElement('td');
         td3.text = datosClima.data[i].min_temp;
-        fila.appendChild(td1);
-        fila.appendChild(td2);
-        fila.appendChild(td3);
+        cuerpoTabla.appendChild(fila.appendChild(td1));
+        cuerpoTabla.appendChild(fila.appendChild(td2));
+        cuerpoTabla.appendChild(fila.appendChild(td3));
+        console.log(fila);
+        console.log(cuerpoTabla);
     }
 }
