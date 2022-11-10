@@ -27,7 +27,7 @@ header{
 
 .logo > a{ 
     display: flex;
-    width: 15%;
+    width: 25%;
     height: 110px;
     background-color: rgba(0, 0, 0, 0.4);
     margin-left: 40px;
@@ -39,7 +39,7 @@ header{
 
 .menu{
     display: flex;
-    width: 80%;
+    width: 70%;
     height: 110px;
     align-items: center;
     justify-content: right;
@@ -152,6 +152,11 @@ footer{
 }
 
 .carousel-item > img{
+    margin: 0 auto;
+    height: 450px;
+}
+
+.carousel-item > video{
     margin: 0 auto;
     height: 450px;
 }
@@ -361,9 +366,9 @@ button{
     padding-bottom: 30px;
 }
 
-.lluvias > img, .humedad > img, .vientos > img{
-    padding-top: 20px;
-    padding-bottom: 40px;
+.lluvias > canvas, .humedad > canvas, .vientos > canvas{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .datosMeteoro > .lluvias, .datosMeteoro > .humedad, .datosMeteoro > .vientos{
