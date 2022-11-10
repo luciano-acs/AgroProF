@@ -181,12 +181,13 @@ footer{
     width: 100%;
     height: 540px;
     align-items: center;
+    flex-direction: column;
 }
 
 .formContainer > .formIngresar{
     width: 35%;
     max-width: 600px;
-    margin: auto auto;
+    margin: 159px 0 50px 0px;
     display: flex;
     flex-direction: column;    
 }
@@ -216,6 +217,11 @@ form > button:hover{
     color: #fff;
 }
 
+.formContainer > a > button:hover{
+    background-color: #46C68C;
+    color: #fff;
+}
+
 .bienvenidaUsuario{
     display: flex;
     width: 80%;
@@ -233,11 +239,8 @@ h1{
     height: 475px;
 }
 
-a:active{
-    color: #000;
-}
-a:visited{
-    color: #46C68C
+a:link, a:visited, a:active {
+    color: black;
 }
 
 .imagenUsuario{
@@ -300,7 +303,7 @@ button{
     margin-top: 25px;
 }
 
-.categorias > button:hover, .botonesFinal > button:hover{    
+.categorias > a > button:hover, .botonesFinal > button:hover{    
     background-color: #46C68C;
     color: #fff;
 }
@@ -344,4 +347,22 @@ button{
 
 .botonesFinal{
     margin-top: 5px;
+}
+
+.lluvias > h1, .humedad > h1, .vientos > h1{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 25px;
+}
+
+.lluvias > p, .humedad > p, .vientos > p{
+    text-align: center;
+    padding-top: 26px;
+    padding-bottom: 30px;
+}
+
+.datosMeteoro > .lluvias, .datosMeteoro > .humedad, .datosMeteoro > .vientos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
