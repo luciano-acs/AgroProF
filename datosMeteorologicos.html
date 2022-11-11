@@ -44,7 +44,7 @@
                     libero quidem porro minus, blanditiis veritatis sequi omnis ex quae eligendi velit mollitia nostrum
                     officia enim exercitationem?</p>                
             </div>
-            <div class="col-4 humedad">
+            <div class="col-4 vientos">
                 <h1>Vientos</h1>
                 <a><button onclick="cargarTablaVientos()">Obtener info</button></a>
                 <canvas id="graficaVientos" width="400" height="350"></canvas>
@@ -65,7 +65,7 @@
                     veritatis incidunt dignissimos aspernatur dolor.
                 </p>                
             </div>
-            <div class="col-4 vientos">
+            <div class="col-4 temperaturas">
                 <h1>Temperatura</h1>
                 <a><button onclick="cargarTablaTemp()">Obtener info</button></a>
                 <canvas id="graficaTemperaturas" width="400" height="350"></canvas>            
@@ -314,7 +314,7 @@
                     labels: dia,
                     datasets: [
                         {
-                            label:"Variacion de temperaturas",
+                            label:"Variacion de vientos",
                             backgroundColor: "#46C68C",
                             data: vientos
                         }

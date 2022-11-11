@@ -318,16 +318,16 @@ button{
     padding-bottom: 15px;
 }
 
-.recomendaciones2 > .acciones > h1, .recomendaciones2 > .experto > h1{
+.recomendaciones2 > .acciones > h1, .recomendaciones1 > .experto > h1{
     text-align: center;
     padding-bottom: 15px;
 }
 
 .recomendaciones1, .recomendaciones2{
-    margin-bottom: 50px;
+    margin-bottom: 225px;
 }
 
-.recomendaciones2 > .experto > button:hover{
+.recomendaciones1 > .experto > button:hover{
     background-color: #46C68C;
     color: #fff;
 }
@@ -354,30 +354,30 @@ button{
     margin-top: 5px;
 }
 
-.lluvias > h1, .humedad > h1, .vientos > h1{
+.lluvias > h1, .temperaturas > h1, .vientos > h1{
     text-align: center;
     padding-top: 15px;
     padding-bottom: 25px;
 }
 
-.lluvias > p, .humedad > p, .vientos > p{
+.lluvias > p, .temperaturas > p, .vientos > p{
     text-align: center;
     padding-top: 26px;
     padding-bottom: 30px;
 }
 
-.lluvias > canvas, .humedad > canvas, .vientos > canvas{
+.lluvias > canvas, .temperaturas > canvas, .vientos > canvas{
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-.datosMeteoro > .lluvias, .datosMeteoro > .humedad, .datosMeteoro > .vientos{
+.datosMeteoro > .lluvias, .datosMeteoro > .temperaturas, .datosMeteoro > .vientos{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.vientos > a > button:hover, .humedad > a > button:hover, .lluvias > a > button:hover{   
+.vientos > a > button:hover, .temperaturas > a > button:hover, .lluvias > a > button:hover{   
     background-color: #46C68C;
     color: #fff;
 }
